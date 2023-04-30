@@ -11,22 +11,17 @@ body{
 }
 .container{
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .boxleft, .boxright{
  flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
-  width: 50%;
+  width: 100%;
 }
 
-.boxright{
-  position: absolute;
-  left: 448px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
 
 /*----------------------------------------------------------------------------------------------*/
 /*Profile*/
