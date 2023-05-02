@@ -37,6 +37,7 @@ body{
   text-align: center;
 }
 figure{
+  margin: 32px auto 42px auto;
   text-align: center;
 }
 .Profile-photo{
@@ -350,6 +351,7 @@ li{
   padding: 30px 782px 30px 30px;
 }
 
+
 .subtitle-2{
   font-family: 'Merriweather Sans';
   font-weight: 700;
@@ -364,6 +366,26 @@ li{
   height: 201px;
   background-color: #302F3D;
   border-radius: 20px;
+  display: flex;
+}
+
+.sample-photo{
+  margin: 31px 0 42px 30px;
+}
+
+.Second-photo{
+  width: 128px;
+   height: 128px;
+   border-radius: 360px;
+   background: #ffffff ;
+   margin-bottom: 30px;
+   border: 2px solid #00FF00 ;
+ }
+
+.text-sample{
+  width: 612px;
+  height: 129px;
+  margin: 30px 162px 42px 20px;
 }
 
 h4{
