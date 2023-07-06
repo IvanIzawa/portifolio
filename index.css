@@ -13,16 +13,23 @@ body{
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .boxleft, .boxright{
+  
  flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
   width: 100%;
 }
 
-
+.boxright{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
 /*----------------------------------------------------------------------------------------------*/
 /*Profile*/
 .Profile{
@@ -281,8 +288,12 @@ li{
 
 .recent-project{
   display: flex;
+  flex-direction: row;
   justify-items: center;
-  justify-self: center;
+  align-items: center;
+
+  width: 50vw;
+
 }
 
 .Project-A, .Project-B{
@@ -302,7 +313,7 @@ li{
 }
 
 .Project-B{
-  margin-left:  30px;
+  margin-left: 30px;
   padding: 30px 30px 32px 30px;
 }
 
@@ -310,7 +321,7 @@ li{
   padding: 30px 30px 32px 30px;
 }
 
-.up{
+  .up{
   display: flex;
   margin-right: 316px;
   height: 20px;
@@ -322,26 +333,73 @@ li{
   width: 20px;
 }
 
-.assets-right,
-.subtitle{
-  flex-grow: 0.3;
-  flex-shrink: 0.3;
-  flex-basis: 0;
-  width: 100%;
-}
 
-.subtitle{
-  color: #837E9F;
-  width: 79px;
-  margin-left: 17px;
-  display: inline-flex;
-  font-family: 'Merriweather Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
+  .subtitle{
+    color: #837E9F;
+    width: 79px;
+    margin-left: 17px;
+    display: inline-flex;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
+  .boxtext{
+    font-family: 'Merriweatther Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #837E9F;
+
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .botton-box-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+    .botton-assets{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+        .botton-assets img{
+          margin-right: 6px;
+        }
+
+    .language{
+      display: flex;
+      flex-direction: row;
+    }
+    .circle{
+      margin-right: 6px;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #837E9F;
+      border-radius: 50px;
+      background-color: #E7DE79;
+    }
+
+    .text-language{
+      font-family: 'Merriweather Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      color: #837E9F;
+    } 
 /*Posts*/
+
+.Posts{
+  display: flex   ;
+  flex-direction: column;
+  align-items: center;
+}
 
 .Last-post{
   width: 952px;
@@ -361,12 +419,16 @@ li{
 }
 
 .sample-post{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+
   margin-top: 30px;
   width: 952px;
   height: 201px;
   background-color: #302F3D;
   border-radius: 20px;
-  display: flex;
 }
 
 .sample-photo{
@@ -386,6 +448,12 @@ li{
   width: 612px;
   height: 129px;
   margin: 30px 162px 42px 20px;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #837E9F;
+  font-size: 14px;
 }
 
 h4{
@@ -395,3 +463,29 @@ h4{
   line-height: 23px;
   color: #837E9F;
 }
+
+
+
+  .description{
+    margin-top: 28px;
+    margin-bottom: 5px;
+    color: #837E9F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .tags{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color:#837E9F;
+
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
